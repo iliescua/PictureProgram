@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0"
+          prefWidth="420.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="iliescua.KernelController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="127.00000610351563" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="266.8" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="327.8000396728516" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="327.8000396728516" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <TextField fx:id="txtTopLeft" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="26.0" prefWidth="100.0">
+            <GridPane.margin>
+                <Insets left="5.0"/>
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="txtTopMiddle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefWidth="100.0">
+            <GridPane.margin>
+                <Insets left="115.0"/>
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="txtTopRight" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefWidth="100.0">
+            <GridPane.margin>
+                <Insets left="225.0"/>
+            </GridPane.margin>
+        </TextField>
+        <Button fx:id="btnBlur" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onMouseClicked="#makeBlur" prefWidth="75.0" text="Blur">
+            <GridPane.margin>
+                <Insets left="335.0"/>
+            </GridPane.margin>
+        </Button>
+        <TextField fx:id="txtMidLeft" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefWidth="100.0" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="5.0"/>
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="txtMidMiddle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefWidth="100.0" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="115.0"/>
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="txtMidRight" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefWidth="100.0" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="225.0"/>
+            </GridPane.margin>
+        </TextField>
+        <Button fx:id="btnSharpen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onMouseClicked="#makeSharpen" prefWidth="75.0" text="Sharpen"
+                GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="335.0"/>
+            </GridPane.margin>
+        </Button>
+        <TextField fx:id="txtBotLeft" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefWidth="100.0" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="5.0"/>
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="txtBotMiddle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefWidth="100.0" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="115.0"/>
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="txtBotRight" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefWidth="100.0" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="225.0"/>
+            </GridPane.margin>
+        </TextField>
+        <Button fx:id="btnEdge" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onMouseClicked="#makeEdge" prefWidth="75.0" text="Edge" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="335.0"/>
+            </GridPane.margin>
+        </Button>
+        <TextField fx:id="txtDivide" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefWidth="100.0" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets left="5.0"/>
+            </GridPane.margin>
+        </TextField>
+        <Button fx:id="btnApply" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onMouseClicked="#applyChanges" prefWidth="210.0" text="Apply"
+                GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets left="115.0"/>
+            </GridPane.margin>
+        </Button>
+    </children>
+</GridPane>

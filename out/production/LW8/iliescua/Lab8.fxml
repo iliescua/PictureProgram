@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0"
+          prefWidth="675.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="iliescua.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="527.9999450683594" minWidth="10.0"
+                           prefWidth="527.9999450683594"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0"
+                           prefWidth="146.40005493164062"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+
+    <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="449.0" prefWidth="147.0" GridPane.columnIndex="1">
+
+        <Button fx:id="btnOpen" mnemonicParsing="false" onMouseClicked="#openFile" prefHeight="26.0" prefWidth="107.0"
+                text="Open">
+            <VBox.margin>
+                <Insets top="20.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="btnSave" mnemonicParsing="false" onMouseClicked="#saveFile" prefHeight="26.0" prefWidth="107.0"
+                text="Save">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="btnReload" mnemonicParsing="false" onMouseClicked="#reloadFile" prefHeight="26.0"
+                prefWidth="106.0" text="Reload">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="btnGrayscale" mnemonicParsing="false" onMouseClicked="#makeGrayscale" prefHeight="26.0"
+                prefWidth="106.0" text="Grayscale">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="btnRed" mnemonicParsing="false" onMouseClicked="#makeRed" prefHeight="26.0" prefWidth="105.0"
+                text="Red">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="btnRedGray" mnemonicParsing="false" onMouseClicked="#makeRedGray" prefHeight="26.0"
+                prefWidth="105.0" text="Red-Gray">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="btnNegative" mnemonicParsing="false" onMouseClicked="#makeNegative" prefHeight="26.0"
+                prefWidth="104.0" text="Negative">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Button>
+        <Button fx:id="btnShowFilter" mnemonicParsing="false" onMouseClicked="#openShowFilter" prefHeight="26.0"
+                prefWidth="105.0" text="Show Filter">
+            <VBox.margin>
+                <Insets bottom="5.0" top="10.0"/>
+            </VBox.margin>
+        </Button>
+        <Label text="Pixel Coordinates">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </Label>
+        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="35.0" prefWidth="146.0">
+            <children>
+                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                       prefHeight="18.0" prefWidth="30.0" text="    X:" textAlignment="RIGHT"/>
+                <TextField fx:id="txtXCord" editable="false" maxHeight="-Infinity" maxWidth="-Infinity"
+                           minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="85.0">
+                    <HBox.margin>
+                        <Insets right="12.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                       prefHeight="18.0" prefWidth="30.0" text="    Y:"/>
+                <TextField fx:id="txtYCord" editable="false" maxHeight="-Infinity" maxWidth="-Infinity"
+                           minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="85.0">
+                    <HBox.margin>
+                        <Insets right="12.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+
+    </VBox>
+    <Pane>
+        <children>
+            <ImageView fx:id="imageHolder" fitHeight="440.0" fitWidth="528.0" layoutX="9.0" layoutY="9.0"
+                       pickOnBounds="true" preserveRatio="true"/>
+        </children>
+    </Pane>
+</GridPane>
